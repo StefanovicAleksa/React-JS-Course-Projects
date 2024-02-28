@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.reset-margin {
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: Arial;
+  color: #333;
+  background-image: url(./assets/landscape-high-res.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+}
