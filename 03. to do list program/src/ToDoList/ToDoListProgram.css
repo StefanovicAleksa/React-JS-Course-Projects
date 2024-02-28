@@ -21,10 +21,107 @@
 }
 
 .task-input-form button:hover {
-    background-color: hsl(125, 46%, 44%);
+    background-color: hsl(125, 46%, 46%);
     outline: 2px solid #333;
 }
 
 .task-input-form input:focus-visible {
     outline: 2px solid #333;
+}
+
+.task-list {
+    width: 100%;
+    text-decoration: none;
+    font-weight: 700;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 0;
+}
+
+.task-list li {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 27px;
+    background-color: #fff;
+}
+
+.task-list form {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.task-list form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 0;
+    border: none;
+    background: none;
+    position: absolute;
+    top: -5%;
+    right: 5px;
+    color: #33333380;
+    font-weight: bold;
+    display: none;
+}
+
+.task-list form button:hover {
+    color: #333333;
+}
+
+.task-list form:hover button {
+    display: flex;
+}
+
+
+.task-list li input {
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.task-control-wrap {
+    display: flex;
+    gap: 5px;
+}
+
+.task-control-wrap button {
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(204, 100%, 84%);
+    transition: background-color 0.3s;
+}
+
+.task-control-wrap button:last-child {
+    background-color: hsl(0, 100%, 75%);
+    transition: background-color 0.3s;
+}
+
+.task-control-wrap button:hover {
+    background-color: hsl(204, 100%, 70%);
+}
+
+.task-control-wrap button:last-child:hover {
+    background-color: hsl(0, 100%, 65%);
+    transition: background-color 0.3s;
 }
